@@ -1,6 +1,6 @@
 baseurl="http://monitoring.opencsi.com"
 probes=("Title" "probe")
-formula='sumSeries(servers.tomcat-www-*.@probe@))),"30min"),"@title@")'
+formula='alias(sumSeries(servers.tomcat-www-*.@probe@),"@title@")'
 height=200
 width=400
 from=-8d
